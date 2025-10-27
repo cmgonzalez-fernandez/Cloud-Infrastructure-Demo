@@ -1,0 +1,7 @@
+---
+- name: Demo server setup
+  hosts: localhost
+  tasks:
+    - name: Install packages (simulated)
+      ansible.builtin.debug:
+        msg: 'Server setup complete'
