@@ -1,1 +1,13 @@
-
+Cloud-Infrastructure-Demo/
+├── terraform/
+│   ├── init_infra.sh
+│   ├── destroy_infra.sh
+│   ├── main.tf
+│   ├── variables.tf
+│   └── outputs.tf
+├── ansible/
+│   ├── setup_demo.yml
+│   └── roles/
+├── docs/
+│   └── architecture_diagram.png
+└── README.md
