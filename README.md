@@ -34,7 +34,7 @@ Cloud-Infrastructure-Demo/
 - Automated provisioning of virtual machines
 - Security group configuration
 - Multi-tier architecture demonstration
-
+---
 ## 🚀 How to Run
 1. Navigate to the Terraform directory
 ```bash
