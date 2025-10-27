@@ -1,7 +1,20 @@
 ---
-- name: Demo server setup
-  hosts: localhost
+- name: Configure Cloud Demo Servers
+  hosts: all
+  become: yes
   tasks:
-    - name: Install packages (simulated)
-      ansible.builtin.debug:
-        msg: 'Server setup complete'
+    - name: Update packages
+      apt:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Ensure Nginx is running
+      service:
+        name: nginx
+        state: started
+        enabled: yes
