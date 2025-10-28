@@ -6,8 +6,7 @@ Cloud-Infrastructure-Demo/
 │   ├── variables.tf
 │   └── outputs.tf
 ├── ansible/
-│   ├── setup_demo.yml
-│   └── roles/
+│   └── setup_demo.yml
 ├── docs/
 │   └── architecture_diagram.png
 └── README.md
